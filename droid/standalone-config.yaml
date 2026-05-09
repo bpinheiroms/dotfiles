@@ -1,0 +1,31 @@
+host: 127.0.0.1
+port: 8320
+auth-dir: ~/.cli-proxy-api
+debug: false
+logging-to-file: false
+request-retry: 3
+request-timeout: 10m
+usage-statistics-enabled: true
+quota-exceeded:
+  switch-preview-model: true
+  switch-project: true
+remote-management:
+  allow-remote: false
+  secret-key: ''
+oauth-excluded-models:
+  antigravity:
+    - '*'
+  claude:
+    - '*'
+  gemini-cli:
+    - '*'
+  github-copilot:
+    - '*'
+  kimi:
+    - '*'
+  qwen:
+    - '*'
+request-log: true
+routing:
+  strategy: "round-robin"
+  session-affinity: false
