@@ -1,4 +1,5 @@
 shell-integration-features = no-title
+command = /bin/zsh -l
 env = TERM=xterm-256color
 env = COLORTERM=truecolor
 env = FORCE_COLOR=3
