@@ -7,5 +7,5 @@ edit = [
 prepend_rules = [
   { mime = "text/*", use = "edit" },
   { mime = "application/json", use = "edit" },
-  { name = "*.{js,jsx,ts,tsx,lua,md,json,toml,yaml,yml,css,scss,html,xml,sh,zsh,env}", use = "edit" },
+  { url = "*.{js,jsx,ts,tsx,lua,md,json,toml,yaml,yml,css,scss,html,xml,sh,zsh,env}", use = "edit" },
 ]

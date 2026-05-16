@@ -19,6 +19,7 @@ brew install \
   oh-my-posh \
   zsh-autosuggestions \
   neovim \
+  tree-sitter-cli \
   yazi
 ```
 
