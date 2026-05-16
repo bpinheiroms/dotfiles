@@ -48,7 +48,7 @@ font-size = 14
   - `git`
   - `cmd-1`
   - `cmd-2`
-  - `yazi`
+  - `file manager`
   - `agent-1`
   - `agent-2`
   - `agent-3`
@@ -56,7 +56,7 @@ font-size = 14
 ### Vim
 
 - Copy `vim/.vimrc` to `~/.vimrc`.
-- It uses a dark Ghostty/Cmux/Yazi-friendly style based on Vim's built-in `habamax` colorscheme.
+- It uses a stable dark Ghostty/Cmux/file-manager-friendly style based on Vim's built-in `slate` colorscheme.
 
 ## Shell
 

@@ -79,7 +79,7 @@
                 "type": "terminal"
               },
               {
-                "customTitle": "yazi",
+                "customTitle": "file manager",
                 "directory": "/Users/example/personal/personal-example-1",
                 "id": "1BE84B1F-D62B-4DDC-8778-5AEB8839555C",
                 "isManuallyUnread": false,
@@ -88,7 +88,7 @@
                 "terminal": {
                   "workingDirectory": "/Users/example/personal/personal-example-1"
                 },
-                "title": "yazi",
+                "title": "file manager",
                 "type": "terminal"
               },
               {
@@ -196,7 +196,7 @@
                 "type": "terminal"
               },
               {
-                "customTitle": "yazi",
+                "customTitle": "file manager",
                 "directory": "/Users/example/personal/personal-example-2",
                 "id": "51C308C6-3893-4E16-BCAC-5742091B595C",
                 "isManuallyUnread": false,
@@ -205,7 +205,7 @@
                 "terminal": {
                   "workingDirectory": "/Users/example/personal/personal-example-2"
                 },
-                "title": "yazi",
+                "title": "file manager",
                 "type": "terminal"
               },
               {
@@ -313,7 +313,7 @@
                 "type": "terminal"
               },
               {
-                "customTitle": "yazi",
+                "customTitle": "file manager",
                 "directory": "/Users/example/personal/personal-example-3",
                 "id": "37298B2E-A77E-481B-A8A6-681C5EE5A7C6",
                 "isManuallyUnread": false,
@@ -322,7 +322,7 @@
                 "terminal": {
                   "workingDirectory": "/Users/example/personal/personal-example-3"
                 },
-                "title": "yazi",
+                "title": "file manager",
                 "type": "terminal"
               },
               {
@@ -430,7 +430,7 @@
                 "type": "terminal"
               },
               {
-                "customTitle": "yazi",
+                "customTitle": "file manager",
                 "directory": "/Users/example/personal/personal-example-4",
                 "id": "C8917D29-31D7-42FA-AFFC-9170760E8E01",
                 "isManuallyUnread": false,
@@ -439,7 +439,7 @@
                 "terminal": {
                   "workingDirectory": "/Users/example/personal/personal-example-4"
                 },
-                "title": "yazi",
+                "title": "file manager",
                 "type": "terminal"
               },
               {

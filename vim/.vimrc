@@ -1,4 +1,4 @@
-" Stable dark Vim config for Ghostty/Cmux/Yazi.
+" Stable dark Vim config for Ghostty/Cmux/file-manager workflows.
 set nocompatible
 set notermguicolors
 set t_Co=256
