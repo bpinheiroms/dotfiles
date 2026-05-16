@@ -9,6 +9,7 @@
   "enableCustomDroids": true,
   "includeCoAuthoredByDroid": false,
   "enableDroidShield": false,
+  "hooksDisabled": true,
   "todoDisplayMode": "pinned",
   "autonomyLevel": "auto-medium",
   "specSaveEnabled": true,
