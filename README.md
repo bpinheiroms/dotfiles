@@ -18,8 +18,10 @@ It does **not** try to mirror every machine-specific detail.
   - Cmux app/session setup with default panes
 - `ghostty/`
   - Ghostty terminal config, font, theme, and shell defaults
-- `vim/`
-  - dark terminal-friendly Vim config
+- `nvim/`
+  - LazyVim-based Neovim setup from `omerxx/dotfiles`
+- `yazi/`
+  - Yazi opener config that sends code/text files to Neovim
 - `zellij/`
   - base config and shortcuts for the terminal multiplexer
   - docs: [`zellij/README.md`](zellij/README.md)

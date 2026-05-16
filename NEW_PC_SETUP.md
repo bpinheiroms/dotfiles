@@ -18,6 +18,7 @@ brew install \
   zsh \
   oh-my-posh \
   zsh-autosuggestions \
+  neovim \
   yazi
 ```
 
@@ -53,10 +54,11 @@ font-size = 14
   - `agent-2`
   - `agent-3`
 
-### Vim
+### Neovim / LazyVim
 
-- Copy `vim/.vimrc` to `~/.vimrc`.
-- It uses a stable dark Ghostty/Cmux/file-manager-friendly style based on Vim's built-in `slate` colorscheme.
+- Copy `nvim/` to `~/.config/nvim`.
+- First run: `nvim .` to let LazyVim install plugins.
+- This stack is based on `omerxx/dotfiles`: LazyVim, Treesitter, TypeScript extras, and `mini.files`.
 
 ## Shell
 
@@ -120,7 +122,9 @@ Open it from a real interactive Ghostty/Cmux pane:
 yazi
 ```
 
-Exit with `q`.
+Copy `yazi/yazi.toml` to `~/.config/yazi/yazi.toml` so opening text/code files from Yazi uses Neovim.
+
+Exit Yazi with `q`.
 
 ## Local Secrets
 
