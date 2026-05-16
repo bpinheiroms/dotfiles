@@ -50,6 +50,22 @@ export PATH="$HOME/.maestro/bin:$PATH"
 # Vite+
 . "$HOME/.vite-plus/env"
 
+# Force full colors in cmux/Ghostty sessions and run Droid from a fresh login shell.
+if [ "$TERM" = "dumb" ]; then
+  export TERM=xterm-256color
+fi
+export COLORTERM=truecolor
+export FORCE_COLOR=3
+export CLICOLOR=1
+
+droid() {
+  if [ -z "$DROID_LOGIN_SHELL_ACTIVE" ]; then
+    DROID_LOGIN_SHELL_ACTIVE=1 zsh -lic 'TERM=xterm-256color COLORTERM=truecolor FORCE_COLOR=3 CLICOLOR=1 command droid "$@"' droid "$@"
+  else
+    TERM=xterm-256color COLORTERM=truecolor FORCE_COLOR=3 CLICOLOR=1 command droid "$@"
+  fi
+}
+
 # Local secrets and machine-specific overrides
 if [ -f "$HOME/.zshrc.local" ]; then
   . "$HOME/.zshrc.local"

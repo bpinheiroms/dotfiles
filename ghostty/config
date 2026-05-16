@@ -1,4 +1,8 @@
 shell-integration-features = no-title
+env = TERM=xterm-256color
+env = COLORTERM=truecolor
+env = FORCE_COLOR=3
+env = CLICOLOR=1
 font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 14
 theme = One Dark
