@@ -78,4 +78,4 @@ cp ~/.factory/settings.json ~/.factory/settings.json.bak
 - The `apiKey` value is the local proxy placeholder expected by CLIProxyAPI, not a real OpenAI API key.
 - The included `standalone-config.yaml` enables request logging plus explicit `round-robin` routing with `session-affinity: false`.
 - The `gpt-5.4(high)`, `gpt-5.4(xhigh)`, `gpt-5.4(medium)`, and `gpt-5.4(low)` aliases are included because they were validated against the local CLIProxyAPI endpoint.
-- This file preserves the existing Factory Droid notification hooks. Remove or edit the `hooks` block if the hook script path changes on another machine.
+- This config intentionally omits Droid notification hooks.
