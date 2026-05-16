@@ -6,6 +6,8 @@
   },
   "sidebar": {
     "showBranchDirectory": false,
-    "branchLayout": "inline"
+    "branchLayout": "inline",
+    "showPullRequests": false,
+    "showPorts": false
   }
 }
