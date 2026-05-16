@@ -15,9 +15,9 @@ set ruler
 set nowrap
 set scrolloff=8
 set ttyfast
-set lazyredraw
-set nomousefocus
-set mouse=
+set mouse=a
+set mousemodel=extend
+set ttymouse=sgr
 
 nnoremap q :quit!<CR>
 
