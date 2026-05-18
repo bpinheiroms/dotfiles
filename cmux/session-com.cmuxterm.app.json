@@ -484,6 +484,357 @@
             ],
             "processTitle": "personal-example-4",
             "statusEntries": []
+          },
+          {
+            "currentDirectory": "/Users/example/personal/personal-example-5",
+            "customTitle": "personal-example-5",
+            "focusedPanelId": "7D50F696-D047-48DA-88FD-54BCC5EA6B8E",
+            "isPinned": false,
+            "layout": {
+              "type": "pane",
+              "pane": {
+                "panelIds": [
+                  "7D50F696-D047-48DA-88FD-54BCC5EA6B8E",
+                  "5E5D9E51-3532-4636-8190-BFE8393377D9",
+                  "6358D191-5EDF-4EBB-A21B-4D65EDED1C68",
+                  "85E194F2-638A-4AE1-9C2E-972A64958D1F",
+                  "242EF0AD-FB6F-4E98-AE9E-2BE7350AFEAD",
+                  "14F9C135-0759-4CB1-9AED-DCA62A6B5A1E",
+                  "E980530A-7D77-4B03-AA74-96A4D5F4B21D"
+                ],
+                "selectedPanelId": "7D50F696-D047-48DA-88FD-54BCC5EA6B8E"
+              }
+            },
+            "logEntries": [],
+            "panels": [
+              {
+                "customTitle": "git",
+                "directory": "/Users/example/personal/personal-example-5",
+                "id": "7D50F696-D047-48DA-88FD-54BCC5EA6B8E",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-5"
+                },
+                "title": "git",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "cmd-1",
+                "directory": "/Users/example/personal/personal-example-5",
+                "id": "5E5D9E51-3532-4636-8190-BFE8393377D9",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-5"
+                },
+                "title": "cmd-1",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "cmd-2",
+                "directory": "/Users/example/personal/personal-example-5",
+                "id": "6358D191-5EDF-4EBB-A21B-4D65EDED1C68",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-5"
+                },
+                "title": "cmd-2",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "file manager",
+                "directory": "/Users/example/personal/personal-example-5",
+                "id": "85E194F2-638A-4AE1-9C2E-972A64958D1F",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-5"
+                },
+                "title": "file manager",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "agent-1",
+                "directory": "/Users/example/personal/personal-example-5",
+                "id": "242EF0AD-FB6F-4E98-AE9E-2BE7350AFEAD",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-5"
+                },
+                "title": "agent-1",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "agent-2",
+                "directory": "/Users/example/personal/personal-example-5",
+                "id": "14F9C135-0759-4CB1-9AED-DCA62A6B5A1E",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-5"
+                },
+                "title": "agent-2",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "agent-3",
+                "directory": "/Users/example/personal/personal-example-5",
+                "id": "E980530A-7D77-4B03-AA74-96A4D5F4B21D",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-5"
+                },
+                "title": "agent-3",
+                "type": "terminal"
+              }
+            ],
+            "processTitle": "personal-example-5",
+            "statusEntries": []
+          },
+          {
+            "currentDirectory": "/Users/example/personal/personal-example-6",
+            "customTitle": "personal-example-6",
+            "focusedPanelId": "4AF830EE-EB43-432F-8203-01BAF33AE075",
+            "isPinned": false,
+            "layout": {
+              "type": "pane",
+              "pane": {
+                "panelIds": [
+                  "4AF830EE-EB43-432F-8203-01BAF33AE075",
+                  "633E368E-126E-44B9-9FA0-4B3EF687B99D",
+                  "CE6D8713-2438-4AE6-83E9-81259FCBA59C",
+                  "68E28D68-F975-4797-AC62-DDA34395B6AB",
+                  "75B7E971-E8D7-4740-AF57-CB5768AE0881",
+                  "30EB432E-73B0-4DA3-B15B-678C116AB4D2",
+                  "96189716-3F37-4371-918F-78A9340B6C46"
+                ],
+                "selectedPanelId": "4AF830EE-EB43-432F-8203-01BAF33AE075"
+              }
+            },
+            "logEntries": [],
+            "panels": [
+              {
+                "customTitle": "git",
+                "directory": "/Users/example/personal/personal-example-6",
+                "id": "4AF830EE-EB43-432F-8203-01BAF33AE075",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-6"
+                },
+                "title": "git",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "cmd-1",
+                "directory": "/Users/example/personal/personal-example-6",
+                "id": "633E368E-126E-44B9-9FA0-4B3EF687B99D",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-6"
+                },
+                "title": "cmd-1",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "cmd-2",
+                "directory": "/Users/example/personal/personal-example-6",
+                "id": "CE6D8713-2438-4AE6-83E9-81259FCBA59C",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-6"
+                },
+                "title": "cmd-2",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "file manager",
+                "directory": "/Users/example/personal/personal-example-6",
+                "id": "68E28D68-F975-4797-AC62-DDA34395B6AB",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-6"
+                },
+                "title": "file manager",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "agent-1",
+                "directory": "/Users/example/personal/personal-example-6",
+                "id": "75B7E971-E8D7-4740-AF57-CB5768AE0881",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-6"
+                },
+                "title": "agent-1",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "agent-2",
+                "directory": "/Users/example/personal/personal-example-6",
+                "id": "30EB432E-73B0-4DA3-B15B-678C116AB4D2",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-6"
+                },
+                "title": "agent-2",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "agent-3",
+                "directory": "/Users/example/personal/personal-example-6",
+                "id": "96189716-3F37-4371-918F-78A9340B6C46",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-6"
+                },
+                "title": "agent-3",
+                "type": "terminal"
+              }
+            ],
+            "processTitle": "personal-example-6",
+            "statusEntries": []
+          },
+          {
+            "currentDirectory": "/Users/example/personal/personal-example-7",
+            "customTitle": "personal-example-7",
+            "focusedPanelId": "2C379B90-FDB4-480A-AA16-E7E6A1D54DE8",
+            "isPinned": false,
+            "layout": {
+              "type": "pane",
+              "pane": {
+                "panelIds": [
+                  "2C379B90-FDB4-480A-AA16-E7E6A1D54DE8",
+                  "9758C3A8-0AF4-44BE-A7DA-07AEFC478393",
+                  "FD2C39BC-855E-4872-B1EC-161543A90BDC",
+                  "055700E3-955E-492D-BF48-A05AA71D2A40",
+                  "F1EE8D79-8DAC-4A06-A980-6DECBD53EC25",
+                  "F9483CA6-C930-4C84-B210-4078CB92EA6A",
+                  "7E1668BD-7154-4E03-B25C-9FD2E5434736"
+                ],
+                "selectedPanelId": "2C379B90-FDB4-480A-AA16-E7E6A1D54DE8"
+              }
+            },
+            "logEntries": [],
+            "panels": [
+              {
+                "customTitle": "git",
+                "directory": "/Users/example/personal/personal-example-7",
+                "id": "2C379B90-FDB4-480A-AA16-E7E6A1D54DE8",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-7"
+                },
+                "title": "git",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "cmd-1",
+                "directory": "/Users/example/personal/personal-example-7",
+                "id": "9758C3A8-0AF4-44BE-A7DA-07AEFC478393",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-7"
+                },
+                "title": "cmd-1",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "cmd-2",
+                "directory": "/Users/example/personal/personal-example-7",
+                "id": "FD2C39BC-855E-4872-B1EC-161543A90BDC",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-7"
+                },
+                "title": "cmd-2",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "file manager",
+                "directory": "/Users/example/personal/personal-example-7",
+                "id": "055700E3-955E-492D-BF48-A05AA71D2A40",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-7"
+                },
+                "title": "file manager",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "agent-1",
+                "directory": "/Users/example/personal/personal-example-7",
+                "id": "F1EE8D79-8DAC-4A06-A980-6DECBD53EC25",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-7"
+                },
+                "title": "agent-1",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "agent-2",
+                "directory": "/Users/example/personal/personal-example-7",
+                "id": "F9483CA6-C930-4C84-B210-4078CB92EA6A",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-7"
+                },
+                "title": "agent-2",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "agent-3",
+                "directory": "/Users/example/personal/personal-example-7",
+                "id": "7E1668BD-7154-4E03-B25C-9FD2E5434736",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-7"
+                },
+                "title": "agent-3",
+                "type": "terminal"
+              }
+            ],
+            "processTitle": "personal-example-7",
+            "statusEntries": []
           }
         ]
       }
