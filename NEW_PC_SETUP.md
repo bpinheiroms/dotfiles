@@ -55,6 +55,7 @@ font-size = 14
   - `agent-1`
   - `agent-2`
   - `agent-3`
+- Starter session uses generic placeholder workspaces (`personal-example-1`, `personal-example-2`, etc.).
 
 ### Neovim / LazyVim
 
