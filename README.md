@@ -12,6 +12,16 @@ It does **not** try to mirror every machine-specific detail.
 
 ## What Is Included
 
+- [`NEW_PC_SETUP.md`](NEW_PC_SETUP.md)
+  - checklist for rebuilding the setup on a new machine
+- `cmux/`
+  - Cmux app/session setup with default panes
+- `ghostty/`
+  - Ghostty terminal config, font, theme, and shell defaults
+- `nvim/`
+  - LazyVim-based Neovim setup from `omerxx/dotfiles`
+- `yazi/`
+  - Yazi opener config that sends code/text files to Neovim
 - `zellij/`
   - base config and shortcuts for the terminal multiplexer
   - docs: [`zellij/README.md`](zellij/README.md)

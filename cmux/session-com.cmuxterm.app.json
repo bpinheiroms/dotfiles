@@ -29,6 +29,7 @@
                   "5E6FA302-99B7-4AB3-BFE3-97F31245A142",
                   "0E2F994B-4D8A-47A3-B619-B7831A288A91",
                   "D5B3B2A1-6146-4C1B-B158-C4C7444CF3A6",
+                  "1BE84B1F-D62B-4DDC-8778-5AEB8839555C",
                   "D2E27475-5AB6-4435-8D9A-008A4ABF0488",
                   "3AAE25F0-FA4B-4F47-8211-2367E20C2B19",
                   "9DB86BDD-59B0-430D-93D8-6A1F13B25D64"
@@ -75,6 +76,19 @@
                   "workingDirectory": "/Users/example/personal/personal-example-1"
                 },
                 "title": "cmd-2",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "file manager",
+                "directory": "/Users/example/personal/personal-example-1",
+                "id": "1BE84B1F-D62B-4DDC-8778-5AEB8839555C",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-1"
+                },
+                "title": "file manager",
                 "type": "terminal"
               },
               {
@@ -132,6 +146,7 @@
                   "A5F8A2AC-B614-4DF2-A31C-AD5C71C4C7A3",
                   "6FCF47A0-2B66-4A62-A6CB-FCF0EEF19583",
                   "EFDE9DE5-BBBC-4E97-8C1F-6E8AFC195C21",
+                  "51C308C6-3893-4E16-BCAC-5742091B595C",
                   "CFD64F19-ACD6-475B-A588-656FE1138A0F",
                   "9C75B445-7580-4B65-A8C4-A91DBFE8D44E",
                   "031E57F9-9924-4479-80AE-304D402BD7AF"
@@ -178,6 +193,19 @@
                   "workingDirectory": "/Users/example/personal/personal-example-2"
                 },
                 "title": "cmd-2",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "file manager",
+                "directory": "/Users/example/personal/personal-example-2",
+                "id": "51C308C6-3893-4E16-BCAC-5742091B595C",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-2"
+                },
+                "title": "file manager",
                 "type": "terminal"
               },
               {
@@ -235,6 +263,7 @@
                   "2D14105E-7EBA-452A-B1D3-9A44FD1F2947",
                   "3BB11924-8169-455D-A3D2-9273663A81EB",
                   "AEBF5262-3E96-4205-AA83-F687E6F37BBA",
+                  "37298B2E-A77E-481B-A8A6-681C5EE5A7C6",
                   "3EB8B0E6-453F-4466-B0EE-DF787E9273BA",
                   "845DF842-046C-4B90-B454-C36ADBE133B0",
                   "72F46018-E1DE-4D9B-94A5-9B1B7865A379"
@@ -281,6 +310,19 @@
                   "workingDirectory": "/Users/example/personal/personal-example-3"
                 },
                 "title": "cmd-2",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "file manager",
+                "directory": "/Users/example/personal/personal-example-3",
+                "id": "37298B2E-A77E-481B-A8A6-681C5EE5A7C6",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-3"
+                },
+                "title": "file manager",
                 "type": "terminal"
               },
               {
@@ -338,6 +380,7 @@
                   "7A1C5244-66D1-4C9B-A5B2-B1F63A04ED28",
                   "4DD21395-A1D3-4237-B586-19125E764628",
                   "E650B7E2-97DC-4467-8F50-4DB3722652C3",
+                  "C8917D29-31D7-42FA-AFFC-9170760E8E01",
                   "EF544661-84EC-4080-88E8-3C9B1F30AE66",
                   "C14FC490-EB3A-4479-88AA-D76CC74A6088",
                   "860272E6-4333-4601-89B0-6C5265314D5D"
@@ -384,6 +427,19 @@
                   "workingDirectory": "/Users/example/personal/personal-example-4"
                 },
                 "title": "cmd-2",
+                "type": "terminal"
+              },
+              {
+                "customTitle": "file manager",
+                "directory": "/Users/example/personal/personal-example-4",
+                "id": "C8917D29-31D7-42FA-AFFC-9170760E8E01",
+                "isManuallyUnread": false,
+                "isPinned": false,
+                "listeningPorts": [],
+                "terminal": {
+                  "workingDirectory": "/Users/example/personal/personal-example-4"
+                },
+                "title": "file manager",
                 "type": "terminal"
               },
               {
