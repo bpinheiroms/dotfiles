@@ -103,7 +103,7 @@ cp zsh/.zshenv ~/.zshenv
 - Config used by `.zshrc.example`:
 
 ```bash
-eval "$(oh-my-posh init zsh --config /opt/homebrew/opt/oh-my-posh/themes/spaceship.omp.json)"
+eval "$(oh-my-posh init zsh --config "$(brew --prefix oh-my-posh)"/themes/spaceship.omp.json)"
 ```
 
 ### Zsh Autosuggestions
