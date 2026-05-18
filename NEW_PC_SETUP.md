@@ -60,7 +60,29 @@ font-size = 14
 
 - Copy `nvim/` to `~/.config/nvim`.
 - First run: `nvim .` to let LazyVim install plugins.
-- This stack is based on `omerxx/dotfiles`: LazyVim, Treesitter, TypeScript extras, and `mini.files`.
+- This stack is based on `omerxx/dotfiles`: LazyVim, Treesitter, TypeScript extras, and Snacks.
+
+#### Snacks plugins
+
+- `picker`: fuzzy search for files, buffers, text, symbols, and history.
+- `explorer`: file explorer inside Neovim; `Space e` opens it.
+- `bigfile`: automatically disables expensive features for large files.
+- `quickfile`: opens direct file targets faster before all plugins finish loading.
+- `input`: improves Neovim input prompts.
+- `notifier`: improves notifications; `Space u n` shows notification history.
+- `words`: highlights and navigates LSP references for the symbol under the cursor.
+- `image`: previews images in supported terminals like Ghostty.
+
+Common shortcuts:
+
+```text
+Space Space    smart file search
+Space f f      find files
+Space /        grep project text
+Space s g      grep project text
+Space s w      grep word under cursor
+Space ,        list buffers
+```
 
 ## Shell
 
