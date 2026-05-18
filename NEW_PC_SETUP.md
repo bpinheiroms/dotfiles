@@ -15,6 +15,7 @@ Use this as the reminder list when configuring a new machine from scratch.
 ```bash
 brew install \
   git \
+  fzf \
   zsh \
   oh-my-posh \
   zsh-autosuggestions \
