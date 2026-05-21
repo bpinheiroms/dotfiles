@@ -1,0 +1,58 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "vibeproxy/gpt-5.5",
+  "provider": {
+    "vibeproxy": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "VibeProxy Codex",
+      "options": {
+        "baseURL": "http://localhost:8317/v1",
+        "apiKey": "{env:CLI_PROXY_API_KEY}"
+      },
+      "models": {
+        "gpt-5.5": {
+          "name": "GPT-5.5 [VibeProxy Codex]"
+        },
+        "gpt-5.4": {
+          "name": "GPT-5.4 [VibeProxy Codex]"
+        },
+        "gpt-5.4-mini": {
+          "name": "GPT-5.4 Mini [VibeProxy Codex]"
+        },
+        "gpt-5.3-codex": {
+          "name": "GPT-5.3 Codex [VibeProxy Codex]"
+        },
+        "gpt-5.3-codex-spark": {
+          "name": "GPT-5.3 Codex Spark [VibeProxy Codex]"
+        },
+        "gpt-5.2": {
+          "name": "GPT-5.2 [VibeProxy Codex]"
+        },
+        "gpt-5.4(high)": {
+          "name": "GPT-5.4 High [VibeProxy Codex]"
+        },
+        "gpt-5.4(xhigh)": {
+          "name": "GPT-5.4 XHigh [VibeProxy Codex]"
+        },
+        "gpt-5.4(medium)": {
+          "name": "GPT-5.4 Medium [VibeProxy Codex]"
+        },
+        "gpt-5.4(low)": {
+          "name": "GPT-5.4 Low [VibeProxy Codex]"
+        }
+      }
+    }
+  },
+  "command": {
+    "vibe": {
+      "description": "Run with VibeProxy GPT-5.5",
+      "model": "vibeproxy/gpt-5.5",
+      "template": "$ARGUMENTS"
+    },
+    "vibe-mini": {
+      "description": "Run with VibeProxy GPT-5.4 Mini",
+      "model": "vibeproxy/gpt-5.4-mini",
+      "template": "$ARGUMENTS"
+    }
+  }
+}
