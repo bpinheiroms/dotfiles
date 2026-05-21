@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+export XDG_CONFIG_HOME="${OPENCODE_VIBEPROXY_CONFIG_HOME:-$HOME/.config/opencode-vibeproxy}"
+exec opencode "$@"
