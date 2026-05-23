@@ -1,0 +1,26 @@
+personality = "pragmatic"
+plan_mode_reasoning_effort = "xhigh"
+model_provider = "vibeproxy"
+model = "gpt-5.5"
+model_reasoning_effort = "high"
+
+[model_providers.vibeproxy]
+name = "VibeProxy"
+base_url = "http://localhost:8317/v1"
+wire_api = "responses"
+
+[profiles.vibeproxy]
+model_provider = "vibeproxy"
+model = "gpt-5.5"
+
+[profiles.vibeproxy-gpt-55]
+model_provider = "vibeproxy"
+model = "gpt-5.5"
+
+[profiles.vibeproxy-gpt-54]
+model_provider = "vibeproxy"
+model = "gpt-5.4"
+
+[profiles.vibeproxy-gpt-54-mini]
+model_provider = "vibeproxy"
+model = "gpt-5.4-mini"
