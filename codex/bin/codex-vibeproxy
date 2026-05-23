@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+models_string="${CODEX_VIBEPROXY_MODELS:-gpt-5.5 gpt-5.4 gpt-5.4-mini}"
+read -r -a models <<< "$models_string"
+
+if [[ ${#models[@]} -eq 0 ]]; then
+  echo "codex-vibeproxy: no models configured" >&2
+  exit 1
+fi
+
+state_dir="${XDG_STATE_HOME:-$HOME/.local/state}/codex"
+state_file="$state_dir/vibeproxy-model-index"
+mkdir -p "$state_dir"
+lock_file="$state_file.lock"
+
+advance_model_index() {
+  local index=0
+  local next_index
+  local stored_index
+
+  if [[ -f "$state_file" ]]; then
+    stored_index="$(cat "$state_file")"
+    if [[ "$stored_index" =~ ^[0-9]+$ ]]; then
+      index="$stored_index"
+    fi
+  fi
+
+  model="${models[$((index % ${#models[@]}))]}"
+  next_index="$(((index + 1) % ${#models[@]}))"
+  printf '%s' "$next_index" > "$state_file"
+}
+
+if command -v flock >/dev/null 2>&1; then
+  exec 9>"$lock_file"
+  flock -x 9
+  advance_model_index
+  flock -u 9
+  exec 9>&-
+else
+  lock_dir="$lock_file.d"
+  while ! mkdir "$lock_dir" 2>/dev/null; do
+    sleep 0.05
+  done
+  trap 'rmdir "$lock_dir"' EXIT
+  advance_model_index
+  rmdir "$lock_dir"
+  trap - EXIT
+fi
+
+echo "codex-vibeproxy: using $model" >&2
+exec command codex -c 'model_provider="vibeproxy"' -m "$model" "$@"
