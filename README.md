@@ -34,11 +34,15 @@ It does **not** try to mirror every machine-specific detail.
 - `codex/`
   - Codex CLI config and VibeProxy integration
   - docs: [`codex/README.md`](codex/README.md)
+- `devin/`
+  - Devin for Terminal token economy hooks and skills
+  - docs: [`devin/README.md`](devin/README.md)
 - `.cursorrules`
   - Cursor global rules
 - `scripts/`
   - setup and bootstrap scripts
   - [`scripts/setup-ai-token-savers.sh`](scripts/setup-ai-token-savers.sh) installs RTK and caveman skills across all assistants
+  - [`scripts/setup-devin-token-economy.sh`](scripts/setup-devin-token-economy.sh) installs Devin RTK/Caveman hooks and skills
 - `skills/`
   - curated skill set kept at the repository root
   - docs: [`skills/README.md`](skills/README.md)

@@ -79,3 +79,28 @@ cp ~/.factory/settings.json ~/.factory/settings.json.bak
 - The included `standalone-config.yaml` enables request logging plus explicit `round-robin` routing with `session-affinity: false`.
 - The `gpt-5.4(high)`, `gpt-5.4(xhigh)`, `gpt-5.4(medium)`, and `gpt-5.4(low)` aliases are included because they were validated against the local CLIProxyAPI endpoint.
 - This config intentionally omits Droid notification hooks.
+
+## Token Economy Validation
+
+`~/.factory/AGENTS.md` is a global Droid instruction file. It is used for Caveman-style terse responses and RTK shell command guidance.
+
+Known behavior:
+
+- Droid reads `~/.factory/AGENTS.md` and can recall the `rtk` shell prefix from persistent instructions.
+- Droid uses the configured VibeProxy model when `sessionDefaultSettings.model` is `custom:VibeProxy-GPT-5.5-0`.
+- RTK usage in Droid is prompt-level guidance, not a transparent command rewrite hook. Droid may still execute raw commands like `git status` unless prompted or a Droid-native tool hook is added later.
+
+Useful checks:
+
+```bash
+cat ~/.factory/AGENTS.md
+curl -sS http://localhost:8317/v1/models | jq -r '.data[].id'
+droid exec --cwd "$PWD" "According to your persistent instructions, what prefix should you use for shell commands? Answer with only the prefix."
+```
+
+Look for recent Droid logs containing:
+
+```text
+modelId":"custom:VibeProxy-GPT-5.5-0"
+isByok":true
+```
