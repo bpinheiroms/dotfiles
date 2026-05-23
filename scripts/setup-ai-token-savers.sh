@@ -28,9 +28,32 @@ rtk init -g --opencode --ultra-compact
 
 npx -y skills add JuliusBrussee/caveman -g --all --copy
 
+for caveman_skill in \
+  "$HOME/.agents/skills/caveman/SKILL.md" \
+  "$HOME/.config/devin/skills/caveman/SKILL.md" \
+  "$HOME/.claude/skills/caveman/SKILL.md"; do
+  if [ -f "$caveman_skill" ]; then
+    perl -0pi -e 's/Default:\s*\*\*full\*\*/Default: **ultra**/g' "$caveman_skill"
+  fi
+done
+
 devin_rule_src="$repo_dir/devin/global_rules.md"
 devin_rule_dest="$HOME/.codeium/windsurf/memories/global_rules.md"
 if [ -f "$devin_rule_src" ]; then
   mkdir -p "$(dirname "$devin_rule_dest")"
   cp "$devin_rule_src" "$devin_rule_dest"
+fi
+
+droid_agents_src="$repo_dir/droid/AGENTS.md"
+droid_agents_dest="$HOME/.factory/AGENTS.md"
+if [ -f "$droid_agents_src" ]; then
+  mkdir -p "$(dirname "$droid_agents_dest")"
+  cp "$droid_agents_src" "$droid_agents_dest"
+fi
+
+opencode_agents_src="$repo_dir/opencode/AGENTS.md"
+opencode_agents_dest="$HOME/.config/opencode/AGENTS.md"
+if [ -f "$opencode_agents_src" ]; then
+  mkdir -p "$(dirname "$opencode_agents_dest")"
+  cp "$opencode_agents_src" "$opencode_agents_dest"
 fi
