@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+real_devin="__DEVIN_REAL_BIN__"
+export DEVIN_RTK_SHIM_DIR="${DEVIN_RTK_SHIM_DIR:-$HOME/.config/devin/rtk-shims}"
+
+python3 "$DEVIN_RTK_SHIM_DIR/generate-shims.py" >/dev/null 2>&1 || true
+export PATH="$DEVIN_RTK_SHIM_DIR:$PATH"
+
+exec "$real_devin" "$@"

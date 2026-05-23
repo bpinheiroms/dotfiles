@@ -7,7 +7,8 @@ Global Devin for Terminal setup for RTK shell command usage and Caveman-style te
 - `skills/rtk/SKILL.md`: RTK usage skill for Devin.
 - `skills/caveman/SKILL.md`: Caveman response mode skill for Devin.
 - `hooks/token-economy-context.py`: injects token-economy context on each user prompt.
-- `rtk hook claude --ultra-compact`: native RTK hook used directly from Devin's Claude-compatible `PreToolUse` hook to rewrite shell commands before execution.
+- `devin-wrapper`: transparent Devin launcher that prepends RTK command shims to `PATH`.
+- `rtk-shims/`: generated executable shims that rewrite supported commands through `rtk rewrite --ultra-compact`.
 
 ## Install
 
@@ -19,21 +20,27 @@ The installer:
 
 - copies skills into `~/.config/devin/skills/`
 - copies hooks into `~/.config/devin/hooks/`
+- copies RTK shims into `~/.config/devin/rtk-shims/`
+- installs a transparent `~/.local/bin/devin` wrapper around the real Devin binary
 - merges hook config into `~/.config/devin/config.json`
 - preserves existing Devin settings and MCP servers
 
 ## Validate
 
-Start a new Devin session and run:
+Start a new Devin session normally:
 
-```text
-/hooks
+```bash
+devin -p "Run git status. Then answer exactly: done"
 ```
 
-Then ask Devin to run a shell command. Commands like `git status` should execute as `rtk git status`.
+Then inspect:
+
+```bash
+cat ~/.config/devin/rtk-shims.log
+```
 
 Expected behavior:
 
-- raw shell commands like `git status` are rewritten to `rtk git status`
-- no block/retry loop is used
+- external shell commands like `git status` are rewritten to `rtk git status`
+- no hook mutation or block/retry loop is used
 - prompt context still asks Devin to use Caveman ultra-style concise responses
