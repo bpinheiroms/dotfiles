@@ -1,8 +1,8 @@
 personality = "pragmatic"
 plan_mode_reasoning_effort = "xhigh"
 model_provider = "vibeproxy"
-model = "gpt-5.5"
-model_reasoning_effort = "high"
+model = "gpt-5.5(medium)"
+model_reasoning_effort = "medium"
 
 [model_providers.vibeproxy]
 name = "VibeProxy"
@@ -11,11 +11,15 @@ wire_api = "responses"
 
 [profiles.vibeproxy]
 model_provider = "vibeproxy"
-model = "gpt-5.5"
+model = "gpt-5.5(medium)"
 
 [profiles.vibeproxy-gpt-55]
 model_provider = "vibeproxy"
 model = "gpt-5.5"
+
+[profiles.vibeproxy-gpt-55-medium]
+model_provider = "vibeproxy"
+model = "gpt-5.5(medium)"
 
 [profiles.vibeproxy-gpt-54]
 model_provider = "vibeproxy"

@@ -14,8 +14,8 @@
   "autonomyLevel": "auto-medium",
   "specSaveEnabled": true,
   "sessionDefaultSettings": {
-    "model": "custom:VibeProxy-GPT-5.5-0",
-    "reasoningEffort": "high",
+    "model": "custom:VibeProxy-GPT-5.5-Medium-10",
+    "reasoningEffort": "medium",
     "autonomyMode": "auto-high",
     "specModeModel": "custom:VibeProxy-GPT-5.4-1",
     "specModeReasoningEffort": "high"
@@ -118,6 +118,16 @@
       "baseUrl": "http://localhost:8320/v1",
       "apiKey": "CLI_PROXY_API_KEY",
       "displayName": "GPT-5.4 Low [CLIProxyAPI Codex]",
+      "noImageSupport": false,
+      "provider": "openai"
+    },
+    {
+      "model": "gpt-5.5(medium)",
+      "id": "custom:VibeProxy-GPT-5.5-Medium-10",
+      "index": 10,
+      "baseUrl": "http://localhost:8320/v1",
+      "apiKey": "CLI_PROXY_API_KEY",
+      "displayName": "GPT-5.5 Medium [CLIProxyAPI Codex]",
       "noImageSupport": false,
       "provider": "openai"
     }

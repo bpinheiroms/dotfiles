@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-models_string="${CODEX_VIBEPROXY_MODELS:-gpt-5.5 gpt-5.4 gpt-5.4-mini}"
+models_string="${CODEX_VIBEPROXY_MODELS:-gpt-5.5(medium) gpt-5.5 gpt-5.4 gpt-5.4-mini}"
 read -r -a models <<< "$models_string"
 
 if [[ ${#models[@]} -eq 0 ]]; then
