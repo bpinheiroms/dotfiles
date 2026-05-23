@@ -37,11 +37,10 @@ for caveman_skill in \
   fi
 done
 
-devin_rule_src="$repo_dir/devin/global_rules.md"
-devin_rule_dest="$HOME/.codeium/windsurf/memories/global_rules.md"
-if [ -f "$devin_rule_src" ]; then
-  mkdir -p "$(dirname "$devin_rule_dest")"
-  cp "$devin_rule_src" "$devin_rule_dest"
+cursorrules_src="$repo_dir/.cursorrules"
+cursorrules_dest="$HOME/.cursorrules"
+if [ -f "$cursorrules_src" ]; then
+  cp "$cursorrules_src" "$cursorrules_dest"
 fi
 
 droid_agents_src="$repo_dir/droid/AGENTS.md"

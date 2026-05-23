@@ -1,4 +1,4 @@
-# my-setup
+# dotfiles
 
 Curated snapshot of the parts of my local development setup that are worth versioning and sharing.
 
@@ -31,6 +31,14 @@ It does **not** try to mirror every machine-specific detail.
 - `droid/`
   - Factory Droid settings for CLIProxyAPI-backed Codex models
   - docs: [`droid/README.md`](droid/README.md)
+- `codex/`
+  - Codex CLI config and VibeProxy integration
+  - docs: [`codex/README.md`](codex/README.md)
+- `.cursorrules`
+  - Cursor global rules
+- `scripts/`
+  - setup and bootstrap scripts
+  - [`scripts/setup-ai-token-savers.sh`](scripts/setup-ai-token-savers.sh) installs RTK and caveman skills across all assistants
 - `skills/`
   - curated skill set kept at the repository root
   - docs: [`skills/README.md`](skills/README.md)
