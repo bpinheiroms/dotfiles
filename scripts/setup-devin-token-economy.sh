@@ -6,15 +6,21 @@ repo_dir="$(cd -- "$script_dir/.." && pwd)"
 devin_dir="$HOME/.config/devin"
 shim_dir="$devin_dir/rtk-shims"
 local_bin="$HOME/.local/bin"
+zshenv="$HOME/.zshenv"
 
-mkdir -p "$devin_dir/skills" "$devin_dir/hooks" "$shim_dir" "$local_bin"
-cp -R "$repo_dir/devin/skills/rtk" "$devin_dir/skills/"
-cp -R "$repo_dir/devin/skills/caveman" "$devin_dir/skills/"
-cp "$repo_dir/devin/hooks/token-economy-context.py" "$devin_dir/hooks/token-economy-context.py"
-cp "$repo_dir/devin/rtk-shims/shim-template" "$shim_dir/shim-template"
-cp "$repo_dir/devin/rtk-shims/generate-shims.py" "$shim_dir/generate-shims.py"
-rm -f "$devin_dir/hooks/enforce-rtk.py"
-chmod +x "$devin_dir/hooks/token-economy-context.py" "$shim_dir/shim-template" "$shim_dir/generate-shims.py"
+if ! command -v rtk >/dev/null 2>&1; then
+  printf 'Could not find rtk in PATH.\n' >&2
+  exit 1
+fi
+
+rtk mkdir -p "$devin_dir/skills" "$devin_dir/hooks" "$shim_dir" "$local_bin"
+rtk cp -R "$repo_dir/devin/skills/rtk" "$devin_dir/skills/"
+rtk cp -R "$repo_dir/devin/skills/caveman" "$devin_dir/skills/"
+rtk cp "$repo_dir/devin/hooks/token-economy-context.py" "$devin_dir/hooks/token-economy-context.py"
+rtk cp "$repo_dir/devin/rtk-shims/shim-template" "$shim_dir/shim-template"
+rtk cp "$repo_dir/devin/rtk-shims/generate-shims.py" "$shim_dir/generate-shims.py"
+rtk rm -f "$devin_dir/hooks/enforce-rtk.py"
+rtk chmod +x "$devin_dir/hooks/token-economy-context.py" "$shim_dir/shim-template" "$shim_dir/generate-shims.py"
 
 devin_cmd="$(command -v devin || true)"
 if [ -z "$devin_cmd" ]; then
@@ -43,9 +49,20 @@ if [ ! -x "$real_devin" ]; then
   exit 1
 fi
 
+rtk rm -f "$local_bin/devin"
 sed "s#__DEVIN_REAL_BIN__#$real_devin#g" "$repo_dir/devin/devin-wrapper" > "$local_bin/devin"
-chmod +x "$local_bin/devin"
-"$shim_dir/generate-shims.py" >/dev/null 2>&1 || true
+rtk chmod +x "$local_bin/devin"
+rtk python3 "$shim_dir/generate-shims.py" >/dev/null 2>&1 || true
+
+path_block='
+# dotfiles: user-local wrappers
+case ":$PATH:" in
+  *":$HOME/.local/bin:"*) ;;
+  *) export PATH="$HOME/.local/bin:$PATH" ;;
+esac'
+if ! grep -Fq '# dotfiles: user-local wrappers' "$zshenv" 2>/dev/null; then
+  printf '%s\n' "$path_block" >> "$zshenv"
+fi
 
 if [ ! -f "$devin_dir/config.json" ]; then
   printf '{\n  "version": 1\n}\n' > "$devin_dir/config.json"
@@ -59,10 +76,11 @@ from pathlib import Path
 path = Path(os.environ["CONFIG_PATH"])
 data = json.loads(path.read_text())
 hooks = data.setdefault("hooks", {})
-managed_commands = {
+managed_commands = (
+    f"python3 {Path.home()}/.config/devin/hooks/token-economy-context.py",
     "python3 ~/.config/devin/hooks/token-economy-context.py",
     "rtk hook claude --ultra-compact",
-}
+)
 for event, entries in list(hooks.items()):
     hooks[event] = [
         entry
@@ -75,7 +93,7 @@ hooks.setdefault("UserPromptSubmit", []).append(
         "hooks": [
             {
                 "type": "command",
-                "command": "python3 ~/.config/devin/hooks/token-economy-context.py",
+                "command": f"python3 {Path.home()}/.config/devin/hooks/token-economy-context.py",
                 "timeout": 2,
             }
         ],

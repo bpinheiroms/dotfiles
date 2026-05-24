@@ -9,7 +9,10 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Local binaries
-export PATH="$PATH:$HOME/.local/bin"
+case ":$PATH:" in
+  *":$HOME/.local/bin:"*) ;;
+  *) export PATH="$HOME/.local/bin:$PATH" ;;
+esac
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"

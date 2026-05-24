@@ -26,6 +26,7 @@ Instead, the recommended approach is:
 ### Base PATH
 
 Ensures system binaries and Homebrew are early in the PATH.
+Ensures `~/.local/bin` is available early for user-level wrappers such as Devin.
 
 ### Oh My Zsh
 

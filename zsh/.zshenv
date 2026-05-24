@@ -1,4 +1,12 @@
 
+# User-local binaries must win before tool-managed shims. This makes wrappers
+# installed by this dotfiles repo, like ~/.local/bin/devin, work in Ghostty,
+# login shells, interactive shells, and non-interactive zsh processes.
+case ":$PATH:" in
+  *":$HOME/.local/bin:"*) ;;
+  *) export PATH="$HOME/.local/bin:$PATH" ;;
+esac
+
 # Vite+ bin (https://viteplus.dev)
 . "$HOME/.vite-plus/env"
 
