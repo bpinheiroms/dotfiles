@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+shim_dir="${DEVIN_RTK_SHIM_DIR:-$HOME/.config/devin/rtk-shims}"
+cmd_name="${0##*/}"
+clean_path=":$PATH:"
+clean_path="${clean_path//:$shim_dir:/:}"
+clean_path="${clean_path#:}"
+clean_path="${clean_path%:}"
+export PATH="$clean_path"
+
+rewritten="$(rtk rewrite --ultra-compact "$cmd_name" "$@" 2>/dev/null || true)"
+if [[ -n "$rewritten" ]]; then
+  printf '[devin-rtk-shim] %s %s -> %s\n' "$cmd_name" "$*" "$rewritten" >> "${DEVIN_RTK_SHIM_LOG:-$HOME/.config/devin/rtk-shims.log}"
+  exec /bin/zsh -lc "$rewritten"
+fi
+
+real_cmd="$(command -v "$cmd_name" || true)"
+if [[ -z "$real_cmd" ]]; then
+  echo "$cmd_name: command not found" >&2
+  exit 127
+fi
+
+exec "$real_cmd" "$@"
