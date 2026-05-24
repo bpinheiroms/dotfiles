@@ -81,6 +81,7 @@ managed_commands = (
     "python3 ~/.config/devin/hooks/token-economy-context.py",
     "rtk hook claude --ultra-compact",
 )
+claude_hook_command = "rtk hook claude --ultra-compact"
 for event, entries in list(hooks.items()):
     hooks[event] = [
         entry
@@ -105,20 +106,19 @@ existing_pre_tool_commands = {
     for entry in pre_tool_use
     for hook in entry.get("hooks", [])
 }
-for command in managed_commands:
-    if command not in existing_pre_tool_commands:
-        pre_tool_use.append(
-            {
-                "matcher": "",
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": command,
-                        "timeout": 2,
-                    }
-                ],
-            }
-        )
+if claude_hook_command not in existing_pre_tool_commands:
+    pre_tool_use.append(
+        {
+            "matcher": "",
+            "hooks": [
+                {
+                    "type": "command",
+                    "command": claude_hook_command,
+                    "timeout": 2,
+                }
+            ],
+        }
+    )
 path.write_text(json.dumps(data, indent=2) + "\n")
 PY
 
