@@ -50,7 +50,7 @@ if [ ! -x "$real_devin" ]; then
 fi
 
 rtk rm -f "$local_bin/devin"
-sed "s#__DEVIN_REAL_BIN__#$real_devin#g" "$repo_dir/devin/devin-wrapper" > "$local_bin/devin"
+rtk sed "s#__DEVIN_REAL_BIN__#$real_devin#g" "$repo_dir/devin/devin-wrapper" > "$local_bin/devin"
 rtk chmod +x "$local_bin/devin"
 rtk python3 "$shim_dir/generate-shims.py" >/dev/null 2>&1 || true
 
@@ -60,7 +60,7 @@ case ":$PATH:" in
   *":$HOME/.local/bin:"*) ;;
   *) export PATH="$HOME/.local/bin:$PATH" ;;
 esac'
-if ! grep -Fq '# dotfiles: user-local wrappers' "$zshenv" 2>/dev/null; then
+if ! rtk grep -Fq '# dotfiles: user-local wrappers' "$zshenv" 2>/dev/null; then
   printf '%s\n' "$path_block" >> "$zshenv"
 fi
 
@@ -99,10 +99,28 @@ hooks.setdefault("UserPromptSubmit", []).append(
         ],
     }
 )
-if not hooks.get("PreToolUse"):
-    hooks.pop("PreToolUse", None)
+pre_tool_use = hooks.setdefault("PreToolUse", [])
+existing_pre_tool_commands = {
+    hook.get("command")
+    for entry in pre_tool_use
+    for hook in entry.get("hooks", [])
+}
+for command in managed_commands:
+    if command not in existing_pre_tool_commands:
+        pre_tool_use.append(
+            {
+                "matcher": "",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": command,
+                        "timeout": 2,
+                    }
+                ],
+            }
+        )
 path.write_text(json.dumps(data, indent=2) + "\n")
 PY
 
-python3 -m json.tool "$devin_dir/config.json" >/dev/null
+rtk python3 -m json.tool "$devin_dir/config.json" >/dev/null
 printf 'Devin token economy installed. Start a new devin session; shell commands will pass through RTK PATH shims.\n'
