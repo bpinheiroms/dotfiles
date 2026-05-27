@@ -14,16 +14,16 @@
   "autonomyLevel": "auto-medium",
   "specSaveEnabled": true,
   "sessionDefaultSettings": {
-    "model": "custom:VibeProxy-GPT-5.5-0",
+    "model": "custom:CLIProxyAPI-GPT-5.5-0",
     "reasoningEffort": "high",
     "autonomyMode": "auto-high",
-    "specModeModel": "custom:VibeProxy-GPT-5.4-1",
+    "specModeModel": "custom:CLIProxyAPI-GPT-5.4-1",
     "specModeReasoningEffort": "high"
   },
   "customModels": [
     {
       "model": "gpt-5.5",
-      "id": "custom:VibeProxy-GPT-5.5-0",
+      "id": "custom:CLIProxyAPI-GPT-5.5-0",
       "index": 0,
       "baseUrl": "http://localhost:8320/v1",
       "apiKey": "CLI_PROXY_API_KEY",
@@ -33,7 +33,7 @@
     },
     {
       "model": "gpt-5.4",
-      "id": "custom:VibeProxy-GPT-5.4-1",
+      "id": "custom:CLIProxyAPI-GPT-5.4-1",
       "index": 1,
       "baseUrl": "http://localhost:8320/v1",
       "apiKey": "CLI_PROXY_API_KEY",
@@ -43,7 +43,7 @@
     },
     {
       "model": "gpt-5.4-mini",
-      "id": "custom:VibeProxy-GPT-5.4-Mini-2",
+      "id": "custom:CLIProxyAPI-GPT-5.4-Mini-2",
       "index": 2,
       "baseUrl": "http://localhost:8320/v1",
       "apiKey": "CLI_PROXY_API_KEY",
@@ -53,7 +53,7 @@
     },
     {
       "model": "gpt-5.3-codex",
-      "id": "custom:VibeProxy-GPT-5.3-Codex-3",
+      "id": "custom:CLIProxyAPI-GPT-5.3-Codex-3",
       "index": 3,
       "baseUrl": "http://localhost:8320/v1",
       "apiKey": "CLI_PROXY_API_KEY",
@@ -63,7 +63,7 @@
     },
     {
       "model": "gpt-5.3-codex-spark",
-      "id": "custom:VibeProxy-GPT-5.3-Codex-Spark-4",
+      "id": "custom:CLIProxyAPI-GPT-5.3-Codex-Spark-4",
       "index": 4,
       "baseUrl": "http://localhost:8320/v1",
       "apiKey": "CLI_PROXY_API_KEY",
@@ -73,7 +73,7 @@
     },
     {
       "model": "gpt-5.2",
-      "id": "custom:VibeProxy-GPT-5.2-5",
+      "id": "custom:CLIProxyAPI-GPT-5.2-5",
       "index": 5,
       "baseUrl": "http://localhost:8320/v1",
       "apiKey": "CLI_PROXY_API_KEY",
@@ -83,7 +83,7 @@
     },
     {
       "model": "gpt-5.4(high)",
-      "id": "custom:VibeProxy-GPT-5.4-High-6",
+      "id": "custom:CLIProxyAPI-GPT-5.4-High-6",
       "index": 6,
       "baseUrl": "http://localhost:8320/v1",
       "apiKey": "CLI_PROXY_API_KEY",
@@ -93,7 +93,7 @@
     },
     {
       "model": "gpt-5.4(xhigh)",
-      "id": "custom:VibeProxy-GPT-5.4-XHigh-7",
+      "id": "custom:CLIProxyAPI-GPT-5.4-XHigh-7",
       "index": 7,
       "baseUrl": "http://localhost:8320/v1",
       "apiKey": "CLI_PROXY_API_KEY",
@@ -103,7 +103,7 @@
     },
     {
       "model": "gpt-5.4(medium)",
-      "id": "custom:VibeProxy-GPT-5.4-Medium-8",
+      "id": "custom:CLIProxyAPI-GPT-5.4-Medium-8",
       "index": 8,
       "baseUrl": "http://localhost:8320/v1",
       "apiKey": "CLI_PROXY_API_KEY",
@@ -113,7 +113,7 @@
     },
     {
       "model": "gpt-5.4(low)",
-      "id": "custom:VibeProxy-GPT-5.4-Low-9",
+      "id": "custom:CLIProxyAPI-GPT-5.4-Low-9",
       "index": 9,
       "baseUrl": "http://localhost:8320/v1",
       "apiKey": "CLI_PROXY_API_KEY",
