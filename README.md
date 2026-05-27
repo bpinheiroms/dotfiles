@@ -29,10 +29,10 @@ It does **not** try to mirror every machine-specific detail.
   - OpenCode Go + Oh My OpenAgent config
   - docs: [`opencode/README.md`](opencode/README.md)
 - `droid/`
-  - Factory Droid settings for CLIProxyAPI-backed Codex models
+  - Factory Droid settings
   - docs: [`droid/README.md`](droid/README.md)
 - `codex/`
-  - Codex CLI config and VibeProxy integration
+  - Codex CLI config
   - docs: [`codex/README.md`](codex/README.md)
 - `devin/`
   - Devin for Terminal token economy hooks and skills
