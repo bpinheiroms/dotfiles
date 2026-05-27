@@ -1,6 +1,6 @@
 # Factory Droid Config
 
-Factory Droid configuration without local proxy routing.
+Factory Droid configuration without custom proxy model definitions. The related `droid/standalone-config.yaml` example still includes proxy routing settings (`strategy: "round-robin"`, `session-affinity: false`), so this README no longer describes the setup as "without local proxy routing."
 
 ## Restore
 
